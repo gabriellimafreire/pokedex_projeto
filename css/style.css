@@ -1,0 +1,117 @@
+body{
+    background: rgb(97, 55, 177);
+    color: white;
+}
+
+.wrapper{
+    max-width: 1024px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    margin: 48px auto;
+    background: rgb(97, 55, 177);
+}
+
+.pokemon-container{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 24px;
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    background: #c38ae4;
+    background-image: url("../assets/pokeball.png");
+    background-size: 100%;
+    background-position: 50px -30%;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgb(34, 33, 33);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card .sprite{
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.card .name{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    background: #c38ae4;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgb(34, 33, 33);
+    opacity: 0.7;
+}
+
+.pagination{
+    margin: 48px auto;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.pagination button{
+    padding: 12px 16px;
+    background: #c2a6dd;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    background: rgb(117, 75, 197);
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgb(34, 33, 33);
+}
+
+.page-index{
+    text-align: center;
+    width: 28px;
+    font-size: 20px;
+}
+
+
+.spinner{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 3px solid  rgb(34, 33, 33);
+    border-bottom-color: transparent;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    0%{
+      rotate: 0deg ;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.hidden{
+    display: none;
+}
